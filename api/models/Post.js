@@ -23,6 +23,10 @@ let PostSchema = new mongoose.Schema({
     updatedAt: {
         type: Date,
         default: Date.now()
+    },
+    categoryId: {
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Category'
     }
 });
 
